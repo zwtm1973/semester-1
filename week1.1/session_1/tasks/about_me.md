@@ -1,3 +1,11 @@
 # About Me
 
-Using the resources linked in examples, have a go at making a quick about you page using Markdown.
+Hello, I'm Jack. I am from Wakefield and I take the bus to university.
+
+## Things I enjoy include:
+
+    * Music
+    * Art and game design
+    * Fishing
+
+> Also, I have 2 dogs, both yorkshire terriers.
