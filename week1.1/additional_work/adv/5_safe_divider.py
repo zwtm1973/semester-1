@@ -5,10 +5,22 @@
 - Only print the final answer when the calculation succeeds.
 """
 
-numerator_input = input("Enter the numerator: ")
-denominator_input = input("Enter the denominator: ")
+try:
+    numerator_input = int(input("Enter the numerator: "))
+    denominator_input = int(input("Enter the denominator: "))
+except:
+    print("Only numbers can be inputted.")
+    exit()
 
 # TODO: wrap the risky operations in a try/except block
 # TODO: convert the values to integers and perform the division
 # TODO: print clear feedback when something goes wrong
 # TODO: only show the answer when the division succeeds
+
+if denominator_input == 0:
+    print("Cannot divide by zero.")
+    exit()
+
+division_result = numerator_input / denominator_input
+
+print(f"This is the division result: {division_result}.")

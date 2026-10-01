@@ -11,3 +11,8 @@ raw_message = input("Type a message to tidy: ")
 # Example methods: strip, title, replace, lower, upper
 # TODO: display the original and cleaned messages
 # Extension: display the character counts for each version
+
+new_message = raw_message.capitalize().strip().replace("/", "?").replace("1", "!")
+
+print(f"This is the result: {new_message}")
+print(f"This is the old string: {raw_message}")

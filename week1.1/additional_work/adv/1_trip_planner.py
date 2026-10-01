@@ -5,12 +5,25 @@
 - Extension: warn if either numeric value is zero or negative.
 """
 
-destination = input("Where are you going to? ")
+try:
+    destination = str(input("Where are you going to? "))
 
-distance_miles_input = input("How many miles will you travel? ")
-time_hours_input = input("How many hours will the journey take? ")
+    distance_miles_input = float(input("How many miles will you travel? "))
+    time_hours_input = float(input("How many hours will the journey take? "))
+except:
+    print("Invalid type for one of the inputs.")
+    exit()
 
 # TODO: convert distance_miles_input and time_hours_input to numbers
 # TODO: calculate the average speed in miles per hour
 # TODO: print a summary message using an f-string
 # Extension: add validation for zero or negative values
+
+if distance_miles_input <= 0 or time_hours_input <= 0:
+    print("A value is 0 or negative.")
+    exit()
+
+ave_spd = round(distance_miles_input / time_hours_input, 2)
+display_spd = str(ave_spd) + " Mph"
+
+print(f"The average speed for this journey should be {display_spd}.")
