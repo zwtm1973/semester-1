@@ -11,11 +11,11 @@ You can complete this task on the worksheet pdf if you prefer.
 |     Command                 |     Explanation    |
 |-----------------------------|--------------------|
 |     pwd                     | shows the current location of the terminal |
-|     ls                      | |
-|     cd directory_name       | |
-|     cd ..                   | |
-|     cd -                    | |
-|     mkdir directory_name    | |
+|     ls                      | lists all files in current directory|
+|     cd directory_name       | navigates to the directory named|
+|     cd ..                   | navigates to the parent of current directory|
+|     cd -                    | navigates to last used directory and prints it's name|
+|     mkdir directory_name    | makes a new directory under the current one|
 |     touch filename          | |
 |     git status              | |
 |     git add -A              | |
