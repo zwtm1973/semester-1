@@ -18,8 +18,8 @@ You can complete this task on the worksheet pdf if you prefer.
 |     mkdir directory_name    | makes a new directory under the current one|
 |     touch filename          | makes a new file with name filename|
 |     git status              | prints the changes between your branch and the main branch, as well as current unstaged changes|
-|     git add -A              | |
-|     git commit -m ""        | |
-|     git push                | |
-|     git pull                | |
+|     git add -A              | stages all current changes|
+|     git commit -m ""        | commites all staged changes with the given string as a message|
+|     git push                | attempts to push commits to the main branch|
+|     git pull                | attempts to pull commits from the main branch|
 
