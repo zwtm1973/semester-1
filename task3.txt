@@ -1,0 +1,7 @@
+2 Advantages of using git are:
+
+1. Old branches are saved, meaning old versions can be recovered in case of an emergency or reversing a mistake, and teams can fork from any point in the history of a project if they choose.
+
+2. Codespaces mean that everyone in a team is working with the same tools and operating system (linux), without everyone having to use the same computer setup. They are also saved to the cloud.
+
+One disadvantage of git is that it can be overwhelming to learn at first, and some mistakes can have punishing consequences, such as accidentally deleting a file with the linux terminal, or losing a commit due to commands.
