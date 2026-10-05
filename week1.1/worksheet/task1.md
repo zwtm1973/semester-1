@@ -16,8 +16,8 @@ You can complete this task on the worksheet pdf if you prefer.
 |     cd ..                   | navigates to the parent of current directory|
 |     cd -                    | navigates to last used directory and prints it's name|
 |     mkdir directory_name    | makes a new directory under the current one|
-|     touch filename          | |
-|     git status              | |
+|     touch filename          | makes a new file with name filename|
+|     git status              | prints the changes between your branch and the main branch, as well as current unstaged changes|
 |     git add -A              | |
 |     git commit -m ""        | |
 |     git push                | |
