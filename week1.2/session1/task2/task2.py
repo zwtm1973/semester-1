@@ -4,6 +4,7 @@ fruit = ["cherry", "strawberry", "melon", "grape", "apple"]
 
 # Sort list
 
+
 # Reverse order of list items
 
 # Remove all items
