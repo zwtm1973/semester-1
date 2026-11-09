@@ -202,11 +202,11 @@ class LookupTable:
         return new_img
 
 
+if __name__ == "__main__":
+    lut = LookupTable.darken()
 
-lut = LookupTable.darken()
+    plus = Image.read("week1.6/session2/projects/lookup_tables/plus.pgm")
 
-plus = Image.read("week1.6/session2/projects/lookup_tables/plus.pgm")
+    plus2 = lut.apply(plus)
 
-plus2 = lut.apply(plus)
-
-plus2.write_pgm("/workspaces/semester-1/week1.6/session2/projects/lookup_tables/darkened_plus.pgm")
+    plus2.write_pgm("/workspaces/semester-1/week1.6/session2/projects/lookup_tables/darkened_plus.pgm")
