@@ -1,0 +1,3 @@
+INFO:root:calculate_average(): started
+INFO:root:263 divided by 3
+INFO:root:return the average, 87.66666666666667 to 2 decimal places
