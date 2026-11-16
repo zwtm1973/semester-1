@@ -13,40 +13,46 @@ The data set 'ramen-ratings.csv' draws from a popular blog rating instant ramen 
 import pandas as pd
 import matplotlib.pyplot as plt
 import random
+import numpy as np
 
-
-def show_histogram_of_ramen_scores(data):
+def show_histogram_of_ramen_scores(data: pd.DataFrame):
     '''
     Create a histogram to show the distribution of numbers of stars given to ramen.
     '''
-    pass
+    star_grouped = data.groupby("Stars").sum(numeric_only=True)
+    star_grouped = star_grouped["Stars"]
+    x_values = np.arange(0,len(star_grouped))
 
-def show_bar_chart_stars_per_manufacturer(data):
+    plt.plot(x=x_values, y= star_grouped, kind="barh")
+
+    plt.show()
+
+def show_bar_chart_stars_per_manufacturer(data: pd.DataFrame):
     '''
     Create a bar chart showing the average rating per manufacturer
     '''
     pass
 
-def show_bar_chart_stars_per_country(data):
+def show_bar_chart_stars_per_country(data: pd.DataFrame):
     '''
     Create a bar chart showing the average rating per country
     '''
     pass
 
-def find_best_per_country(data, country):
+def find_best_per_country(data: pd.DataFrame, country):
     '''
     Find and return the index of the row with the highest rating per country.
     If there are two with equal rating, you can return either.
     '''
     pass
 
-def find_worst_per_country(data, country):
+def find_worst_per_country(data: pd.DataFrame, country):
     '''
     Find and return the index of the row with the lowest rating per country.
     '''
     pass
 
-def show_piechart_of_manufacturers_by_country(data, country):
+def show_piechart_of_manufacturers_by_country(data: pd.DataFrame, country):
     '''
     Create a pie chart showing the percentage of each manufacturer in the country
     '''
@@ -63,14 +69,14 @@ def print_ramen_rating(rating):
     '''
     pass
 
-def show_top_ten(data):
+def show_top_ten(data: pd.DataFrame):
     '''
     Select the top-ten ramen and print them out in order of lowest rating to highest
     You may want to call your print_ramen_rating() function for this.
     '''
     pass
 
-def random_ramen_review(data):
+def random_ramen_review(data: pd.DataFrame):
     '''
     Pick a random ramen from the dataframe and give it's basic information.
     You could also add:
