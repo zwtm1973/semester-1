@@ -24,9 +24,12 @@ print(data["Sleep_Hours_Per_Day"].std())
 print(data["Study_Hours_Per_Day"].max())
 
 # Sort the students by social hours per day ascending (lowest -> highest)
-social_sort = (data["Social_Hours_Per_Day"])
+social_sort = (data["Social_Hours_Per_Day"].sort_values(ascending = True))
+print(social_sort)
 
 # Add a column 'Total_hours' which adds together all the Hours_Per_Day columns into one
+data["Total_hours"] = data["Sleep_Hours_Per_Day"] + data["Social_Hours_Per_Day"] + data["Study_Hours_Per_Day"] + data["Extracurricular_Hours_Per_Day"] + data["Physical_Activity_Hours_Per_Day"]
+print(data["Total_hours"])
 
 # Filter all students with a 'high' stress level, and all the students with a 'low' stress level.
 # Can you work out whether having a higher stress level leads to a higher GPA?
