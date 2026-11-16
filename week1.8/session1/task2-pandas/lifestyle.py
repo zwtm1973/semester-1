@@ -3,6 +3,7 @@ import pandas
 data = pandas.read_csv("lifestyle_data.csv")
 
 # What data type is `data` as output from the `read_csv()` method?
+print(type(data))
 
 # For each of the following pieces of information, try and use pandas to find the answer from the dataset in 'data'
 # - You can open the csv file to see what data is available.
@@ -10,14 +11,20 @@ data = pandas.read_csv("lifestyle_data.csv")
 # - Leave your code under the comments.
 
 # Find the total number of students
+print(data.size)
 
 # Find the mean average GPA of the students
+average = data['GPA'].mean()
+print(average)
 
 # Find the standard deviation of how much sleep students get per day
+print(data["Sleep_Hours_Per_Day"].std())
 
 # Find the maximum amount of study hours per day
+print(data["Study_Hours_Per_Day"].max())
 
 # Sort the students by social hours per day ascending (lowest -> highest)
+social_sort = (data["Social_Hours_Per_Day"])
 
 # Add a column 'Total_hours' which adds together all the Hours_Per_Day columns into one
 
