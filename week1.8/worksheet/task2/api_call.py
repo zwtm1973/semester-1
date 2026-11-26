@@ -3,7 +3,7 @@ import httpx
 
 base_url = "https://dummyjson.com/"
 
-content = "posts/1"
+content = "recipe/meal-type/snack"
 
 url = base_url + content  # API request
 
@@ -13,4 +13,7 @@ print(response.status_code)   # HTTP response
 
 content = response.json()   # JSON data
 
-print(content)
+for key in content:
+    if key is dict:
+     print (content[key]["difficulty"])
+#print(content)
